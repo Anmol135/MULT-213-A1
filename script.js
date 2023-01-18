@@ -43,3 +43,11 @@ const candy_total=document.getElementById("candy_total");
 candy_total.innerHTML=("The total number of Candy-Count among all the pokemons would be: "+sum);
 const summary=document.getElementById("summary");
 summary.innerHTML=("The average for Candy-Count among all the pokemons would be: "+average);
+
+//Getting the total number of pokemons
+let num;
+for(let i=0;i<data.pokemon.length;i++){
+    num=data.pokemon.length;
+}
+const total_pokemon=document.getElementById("total_pokemon");
+total_pokemon.innerHTML=("The total number of Candy-Count among all the pokemons would be: "+num);
