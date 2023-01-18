@@ -51,3 +51,16 @@ for(let i=0;i<data.pokemon.length;i++){
 }
 const total_pokemon=document.getElementById("total_pokemon");
 total_pokemon.innerHTML=("The total number of Candy-Count among all the pokemons would be: "+num);
+
+//Getting the max value out spawn_chance
+let spawnChance=[]; //Create an array to hold the parseFloat values of spawn_chance
+for( var i=0; i<data.pokemon.length;i++){
+    if(data.pokemon[i].spawn_chance){
+        let spawn_chance=data.pokemon[i].spawn_chance;
+        let spawn_num=parseFloat(spawn_chance);
+        spawnChance.push(spawn_num);
+    }
+}
+console.log(spawnChance);
+const spawn_chance=document.getElementById("spawn_chance");
+spawn_chance.innerHTML=("The max value for Spawn-Chance among all the pokemon is: "+ Math.max(...spawnChance));
