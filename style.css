@@ -29,3 +29,33 @@ footer{
 img{
     margin-left: 60px;
 }
+#spawn_chance{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    background-color: lightgoldenrodyellow;
+}
+#candy_total{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    background-color: lightpink;
+}
+#total_pokemon{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    background-color: lightpink;
+}
+#summary{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    background-color: lightgoldenrodyellow;
+}
+#max_weight{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    background-color: lightgoldenrodyellow;
+}
+#max_height{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    background-color: lightpink;
+}
