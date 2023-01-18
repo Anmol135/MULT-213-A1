@@ -79,3 +79,18 @@ for (var i = 0; i < data.pokemon.length; i++) {
 console.log(heightMax);
 const max_height = document.getElementById("max_height");
 max_height.innerHTML = ("The max value for height among all the pokemon is: " + Math.max(...heightMax)+"m"+"<br> The min value for height among all the pokemon is: " + Math.min(...heightMax)+"m");
+
+//Getting the minimum and maximum weight out of pokemons
+
+let weightMax = [];
+for (var i = 0; i < data.pokemon.length; i++) {
+    if (data.pokemon[i].weight) {
+        let clean_weight = data.pokemon[i].weight.replace("kg", "");
+        clean_weight = clean_weight.trim();
+        let weight_num = parseFloat(clean_weight);
+        weightMax.push(weight_num);
+    }
+}
+console.log(weightMax);
+const max_weight = document.getElementById("max_weight");
+max_weight.innerHTML = ("The max value for weight among all the pokemon is: " + Math.max(...weightMax)+"kg"+"<br> The min value for weight among all the pokemon is: " + Math.min(...weightMax)+"kg");
