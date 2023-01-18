@@ -25,12 +25,21 @@ for (let i = 0; i < data.pokemon.length; i++) {
 </footer>
 </div>
 </div>
-
-
-
-
-
-
 `;
 }
 output.innerHTML = html;
+//Doing calculations now
+//Calculating total number of candy-count and the average candy-count
+let sum=0;
+let average;
+for(let i=0;i<data.pokemon.length;i++){
+    if(data.pokemon[i].candy_count){
+        let total=parseInt(data.pokemon[i].candy_count);
+        sum+=total;
+        average=parseFloat(sum/data.pokemon.length);
+    }
+}
+const candy_total=document.getElementById("candy_total");
+candy_total.innerHTML=("The total number of Candy-Count among all the pokemons would be: "+sum);
+const summary=document.getElementById("summary");
+summary.innerHTML=("The average for Candy-Count among all the pokemons would be: "+average);
